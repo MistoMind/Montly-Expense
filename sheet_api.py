@@ -14,7 +14,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 import private_data
 
 SAMPLE_SPREADSHEET_ID = private_data.spreadsheet_id
-SAMPLE_RANGE_NAME = private_data.range
+SAMPLE_RANGE_NAME = private_data.data_range
 
 
 def get_data_sheet():

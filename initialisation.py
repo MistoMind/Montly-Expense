@@ -1,11 +1,12 @@
 import pandas as pd
 from person import Person
+import private_data
 
 ITEM_COL = 0
 COST_COL = 1
 PERSON_COL = 2
 NON_CONTRIBUTOR_COL = 3
-persons_name = ["akshat", "jay", "deepak", "khush"]
+persons_name = private_data.people
 
 
 # Creating Person's
