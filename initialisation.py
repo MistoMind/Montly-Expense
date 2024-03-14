@@ -37,15 +37,10 @@ def calculate_give_take(persons, data):
             part_total = sum(pd.to_numeric(data[data[NON_CONTRIBUTOR_COL] == person][COST_COL]))
             contributors = [i for i in persons_name if i not in no_con_this]
             per_person_cost = part_total / (len(contributors))
-            # print("They do not contribute:", no_con_this)
         else:
             contributors = persons_name
             part_total = sum(pd.to_numeric(data[data[NON_CONTRIBUTOR_COL].isnull()][COST_COL]))
             per_person_cost = part_total / len(persons)
-
-        # print("Total sum consumed:", part_total)
-        # print("They will contribute:", contributors)
-        # print("Each person contribution:", per_person_cost)
 
         for p in persons:
             if p.name in contributors:
