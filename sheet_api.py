@@ -54,9 +54,5 @@ def get_data_sheet():
         else:
             return values
 
-        # print('Name, Major:')
-        # for row in values:
-        #     # Print columns A and E, which correspond to indices 0 and 4.
-        #     print(row[0])
     except HttpError as err:
         print(err)
